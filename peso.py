@@ -84,23 +84,26 @@ try:
 except:
     print("dati inseriti non corretti")
 #faccio vedere i miei andamenti in palestra 
+try:
 
-giorno1=input("inserisci il nome del giorno: ")
-giorno2=input("inserisci il nome del giorno: ")
-giorno3=input("inserisci il nome del giorno: ")
-tempo1=float(input("inserisci quante ore fai di allenamento: "))
-tempo2=float(input("inserisci quante ore fai di allenamento: "))
-tempo3=float(input("inserisci quante ore fai di allenamento: "))
-x = np.array([giorno1,giorno2,giorno3])
-y = np.array([tempo1,tempo2,tempo3])
+    giorno1=input("inserisci il nome del giorno: ")
+    giorno2=input("inserisci il nome del giorno: ")
+    giorno3=input("inserisci il nome del giorno: ")
+    tempo1=float(input("inserisci quante ore fai di allenamento: "))
+    tempo2=float(input("inserisci quante ore fai di allenamento: "))
+    tempo3=float(input("inserisci quante ore fai di allenamento: "))
+    x = np.array([giorno1,giorno2,giorno3])
+    y = np.array([tempo1,tempo2,tempo3])
 
-plt.plot(x, y)
+    plt.plot(x, y)
 
-plt.xlabel("giorni")
-plt.ylabel("tempo allenamneto")
+    plt.xlabel("giorni")
+    plt.ylabel("tempo allenamneto")
 
 
-plt.show()
+    plt.show()
+except:
+    print("dati inseriti non corretti")
 #do il comando di aprire un file in jsonata
 
 print("confronto peso e altezza con i famigliari")
@@ -125,16 +128,7 @@ lr.fit(x.reshape(-1, 1), y)
 print(lr.predict([[1.57]]))
 
 
-#grafico
 
-coef = np.polyfit(x,y,1)
-poly1d_fn = np.poly1d(coef)
-
-plt.plot(x,y, 'yo', x, poly1d_fn(x), '-k')
-
-plt.xlim(0, 1)
-plt.ylim(0, 60)
-plt.show()
 
 #apro un documento excel
 
