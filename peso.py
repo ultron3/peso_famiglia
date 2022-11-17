@@ -135,7 +135,7 @@ print(lr.predict([[1.57]]))
 
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
-
+print (type(excel_document))
 
 
 
