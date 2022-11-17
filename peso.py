@@ -1,5 +1,5 @@
 #inizio codice
-#utilizzo la libreia  numpy e pandas
+#utilizzo la libreria  numpy e pandas
 
 import numpy as np
 import matplotlib.pyplot as plt
