@@ -1,0 +1,44 @@
+[
+    {
+        "nome":"alex",
+        "cognome":"gnavi",
+        "peso": 72,
+        "altezza":1.76
+
+    },
+    {
+        "nome":"bruno",
+        "cognome":"gnavi",
+        "peso": 80,
+        "altezza":1.69
+ 
+    },
+    {
+        "nome":"graziella",
+        "cognome":"penoncello",
+        "peso": 68.8,
+        "altezza":1.57
+ 
+    },
+    {
+        "nome":"danilo",
+        "cognome":"boscolo",
+        "peso": 80,
+        "altezza":1.70
+ 
+    },
+    {
+        "nome":"denny",
+        "cognome":"boscolo",
+        "peso": 73,
+        "altezza":1.78
+ 
+    },
+    {
+        "nome":"fabiana",
+        "cognome":"vespertino",
+        "peso": "ND",
+        "altezza":1.52
+ 
+    }
+]
