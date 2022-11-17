@@ -4,6 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sklearn as sk
 import pandas as pd
 
 #attraverso python  documento i miei progressi in palestra
@@ -113,13 +114,28 @@ df = pd.read_json('famiglia.json')
 print(df.to_string()) 
 
 
+#modello gaussiano
+
+giorni=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato","domenica"]
+uscita=["si","no","si","no","si","no","no"]
+from sklearn import preprocessing
+le = preprocessing.LabelEncoder() # Creo il label encoder (chiamato dunque "le")
+giorni_encoded=le.fit_transform(giorni)
+uscita_encoded=le.fit_transform(uscita)
+from sklearn.naive_bayes import GaussianNB 
+model = GaussianNB()
+model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded)
+predicted=model.predict([[1]])
+print("il risultato è:") 
+print(predicted.tolist()) 
+
 #regressione lineare
 
 
 from sklearn.linear_model import LinearRegression        
 
-x = np.array([72,80,68.8,80,73])#peso
-y = np.array([1.76,1.69,1.57,1.70,1.78])#altezza
+x = np.array([1.76,1.69,1.57,1.70,1.78])#peso  
+y = np.array([ 72,80,68.8,80,73])#altezza   
 
 lr = LinearRegression()
 lr.fit(x.reshape(-1, 1), y)
@@ -131,8 +147,6 @@ print(lr.predict([[1.57]]))
 
 
 #apro un documento excel
-
-
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
