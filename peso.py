@@ -7,6 +7,8 @@ import seaborn as sns
 import sklearn as sk
 import pandas as pd
 
+
+
 #attraverso python  documento i miei progressi in palestra
 
 print(" settimana di ferragosto")
@@ -151,9 +153,27 @@ import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
 
+import pymongo
 
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["dbmpalestra"]
+mycol = mydb["progressi"]
 
+nome=input("inserisci nome: ")
+usr=input("inserisci username: ")
+abitazione=input("inserisci dove abiti: ")
+percorso=float(input("inserisci quanti km vuoi fare: "))
+record=float(input("record precedenti: "))
 
+mydict={ 
+    "nome": nome, 
+    "username" :usr,
+    "indirizzo":abitazione,
+    "percorso":percorso,
+    "record":record
+}
+
+x = mycol.insert_one(mydict)
 
 #fine codice
 
