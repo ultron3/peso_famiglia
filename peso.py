@@ -153,6 +153,8 @@ import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
 
+#collegamento a mongodb
+
 import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
