@@ -175,6 +175,8 @@ mydict={
 
 x = mycol.insert_one(mydict)
 
+
+
 #fine codice
 
 
