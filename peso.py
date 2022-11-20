@@ -156,6 +156,9 @@ print (type(excel_document))
 sheet = excel_document.get_sheet_by_name('Foglio1')
 print (sheet['D9'].value)
 
+sheet = excel_document.get_sheet_by_name('Foglio1')
+print (sheet['E9'].value)
+
 #collegamento a mongodb
 
 import pymongo
