@@ -153,6 +153,9 @@ import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
 
+sheet = excel_document.get_sheet_by_name('Foglio1')
+print (sheet['D9'].value)
+
 #collegamento a mongodb
 
 import pymongo
