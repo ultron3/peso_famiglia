@@ -86,27 +86,7 @@ try:
     print("la media dei km è:"+str(media))
 except:
     print("dati inseriti non corretti")
-#faccio vedere i miei andamenti in palestra 
-try:
 
-    giorno1=input("inserisci il nome del giorno: ")
-    giorno2=input("inserisci il nome del giorno: ")
-    giorno3=input("inserisci il nome del giorno: ")
-    tempo1=float(input("inserisci quante ore fai di allenamento: "))
-    tempo2=float(input("inserisci quante ore fai di allenamento: "))
-    tempo3=float(input("inserisci quante ore fai di allenamento: "))
-    x = np.array([giorno1,giorno2,giorno3])
-    y = np.array([tempo1,tempo2,tempo3])
-
-    plt.plot(x, y)
-
-    plt.xlabel("giorni")
-    plt.ylabel("tempo allenamneto")
-
-
-    plt.show()
-except:
-    print("dati inseriti non corretti")
 #do il comando di aprire un file in jsonata
 
 print("confronto peso e altezza con i famigliari")
