@@ -171,6 +171,7 @@ nome=input("inserisci nome: ")
 usr=input("inserisci username: ")
 abitazione=input("inserisci dove abiti: ")
 percorso=float(input("inserisci quanti km vuoi fare: "))
+giorno=input("inserisci il giorno: ")
 record=float(input("record precedenti: "))
 
 mydict={ 
@@ -178,6 +179,7 @@ mydict={
     "username" :usr,
     "indirizzo":abitazione,
     "percorso":percorso,
+    "giorno":giorno,
     "record":record
 }
 
@@ -189,8 +191,6 @@ x = mycol.insert_one(mydict)
 
 
 print("****** THE END *********")
-
-
 
 
 
