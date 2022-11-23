@@ -111,19 +111,19 @@ predicted=model.predict([[2]])
 print("il risultato è:") 
 print(predicted.tolist()) 
 
-#regressione lineare
+#regressione lineare tra altezza e peso
 
 
 from sklearn.linear_model import LinearRegression        
 
-x = np.array([1.76,1.69,1.57,1.70,1.78])#peso  
-y = np.array([ 72,80,68.8,80,73])#altezza   
+x = np.array([1.57,1.69,1.70,1.76,1.78])#peso  #1.57 1.69 1.70 1.76 1.78
+y = np.array([ 68.8,72,73,75,80])#altezza   #68.8 72 73 75 80
 
 lr = LinearRegression()
 lr.fit(x.reshape(-1, 1), y)
 
 #Predizione
-print(lr.predict([[1.57]]))
+print(lr.predict([[1.70]]))
 
 
 
