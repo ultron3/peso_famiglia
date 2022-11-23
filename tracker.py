@@ -5,6 +5,10 @@ import seaborn as sns
 import sklearn as sk
 import pandas as pd
 
+from tensorflow import _keras_module
+
+
+
 try:
 #inserisco i giorni
     giorno1=input("inserisci il giorno:")

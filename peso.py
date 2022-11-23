@@ -117,13 +117,15 @@ print(predicted.tolist())
 from sklearn.linear_model import LinearRegression        
 
 x = np.array([1.57,1.69,1.70,1.76,1.78])#peso  #1.57 1.69 1.70 1.76 1.78
+print("altezza:"+str(x))
 y = np.array([ 68.8,72,73,75,80])#altezza   #68.8 72 73 75 80
-
+print("peso:"+str(y))
+n=float(input("inserisci il valore mediano dell'altezza:"))
 lr = LinearRegression()
 lr.fit(x.reshape(-1, 1), y)
 
 #Predizione
-print(lr.predict([[1.70]]))
+print(lr.predict([[n]]))
 
 
 
