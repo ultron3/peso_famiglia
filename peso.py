@@ -128,6 +128,7 @@ print(lr.predict([[1.70]]))
 
 
 
+
 #apro un documento excel utilizzando la libreria openpyxl
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
