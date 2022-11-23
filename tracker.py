@@ -37,7 +37,7 @@ except:
 n=int(input("inserisci un numero (deve essere 0, 1, 2):  "))
 
 giorni_allenamento=["lunedi","mercoledi","venerdi","sabato"]
-uscita=["si","no","si","no"]
+uscita=["si","no","si","si"]
 from sklearn import preprocessing
 le = preprocessing.LabelEncoder() # Creo il label encoder (chiamato dunque "le")
 giorni_encoded=le.fit_transform(giorni_allenamento)
