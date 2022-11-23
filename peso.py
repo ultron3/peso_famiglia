@@ -7,7 +7,7 @@ import seaborn as sns
 import sklearn as sk
 import pandas as pd
 
-
+from tensorflow import keras
 
 #attraverso python  documento i miei progressi in palestra
 
