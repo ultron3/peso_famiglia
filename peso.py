@@ -142,32 +142,6 @@ print (sheet['D9'].value)
 sheet = excel_document.get_sheet_by_name('Foglio1')
 print (sheet['E9'].value)
 
-#collegamento a mongodb
-
-import pymongo
-
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["dbmpalestra"]
-mycol = mydb["progressi"]
-
-nome=input("inserisci nome: ")
-usr=input("inserisci username: ")
-abitazione=input("inserisci dove abiti: ")
-percorso=float(input("inserisci quanti km vuoi fare: "))
-giorno=input("inserisci il giorno: ")
-record=float(input("record precedenti: "))
-
-mydict={ 
-    "nome": nome, 
-    "username" :usr,
-    "indirizzo":abitazione,
-    "percorso":percorso,
-    "giorno":giorno,
-    "record":record
-}
-
-x = mycol.insert_one(mydict)
-
 
 
 #fine codice

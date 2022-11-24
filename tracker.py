@@ -5,9 +5,34 @@ import seaborn as sns
 import sklearn as sk
 import pandas as pd
 
+import pymongo
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["dbmpalestra"]
+mycol = mydb["progressi"]
+
+nome=input("inserisci nome: ")
+usr=input("inserisci username: ")
+abitazione=input("inserisci dove abiti: ")
+percorso=float(input("inserisci quanti km vuoi fare: "))
+giorno=input("inserisci il giorno: ")
+media_settimanale=float(input("record precedenti: "))
+
+mydict={ 
+    "nome": nome, 
+    "username" :usr,
+    "indirizzo":abitazione,
+    "percorso":percorso,
+    "giorno":giorno,
+    "record":media_settimanale
+}
+
+x = mycol.insert_one(mydict)
 
 
 
+
+print("inizio settimana ")
 
 try:
 #inserisco i giorni
@@ -33,12 +58,14 @@ try:
 
 
     plt.show()
+    media=(km1+km2+km3+km4+km5)/5
+    print("la media settimanale è "+str(media))
 except:
     print("dati inseriti non corretti")
 
 #utilizzo modello gaussiano
 
-n=int(input("inserisci un numero (deve essere 0, 1, 2):  "))
+n=int(input("inserisci un numero (deve essere 0[venerdi], 1[mercoledi], 2[lunedi]):  "))
 
 giorni_allenamento=["lunedi","mercoledi","venerdi","sabato"]
 uscita=["si","no","si","si"]
