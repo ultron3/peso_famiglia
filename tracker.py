@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn as sk
 import pandas as pd
-
+from tensorflow import keras
 import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -29,7 +29,7 @@ mydict={
 
 x = mycol.insert_one(mydict)
 
-
+print("Ciao mi chiamo Movit Ai il tuo personal virtuale")
 
 
 print("inizio settimana ")
@@ -82,3 +82,8 @@ print("giorno in cui potrei allenarmi: ")
 print(predicted.tolist()) 
 
 print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km "))
+
+
+
+
+
