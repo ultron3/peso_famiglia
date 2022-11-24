@@ -13,10 +13,10 @@ mycol = mydb["progressi"]
 
 nome=input("inserisci nome: ")
 usr=input("inserisci username: ")
-abitazione=input("inserisci dove abiti: ")
+abitazione=input(" dove abiti: ")
 percorso=float(input("inserisci quanti km vuoi fare: "))
 giorno=input("inserisci il giorno: ")
-media_settimanale=float(input("record precedenti: "))
+media_settimanale=float(input("media km precedenti: "))
 
 mydict={ 
     "nome": nome, 
