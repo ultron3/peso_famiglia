@@ -65,10 +65,10 @@ except:
 
 #utilizzo modello gaussiano
 
-n=int(input("inserisci un numero (deve essere 0[venerdi], 1[mercoledi], 2[lunedi]):  "))
+n=int(input("inserisci un numero (deve essere 0[lunedi], 1[mercoledi], 2[venerdi]):  "))
 
-giorni_allenamento=["lunedi","mercoledi","venerdi","sabato"]
-uscita=["si","no","si","si"]
+giorni_allenamento=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato"]
+uscita=["si","no","si","no","si","si"]
 
 from sklearn import preprocessing
 le = preprocessing.LabelEncoder() # Creo il label encoder (chiamato dunque "le")
@@ -76,7 +76,7 @@ giorni_encoded=le.fit_transform(giorni_allenamento)
 uscita_encoded=le.fit_transform(uscita)
 from sklearn.naive_bayes import GaussianNB 
 model = GaussianNB()
-model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded) #: 2: lunedi, 1=mercoledi, 0: venerdi.
+model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded) 
 predicted=model.predict([[n]])
 print("giorno in cui potrei allenarmi: ") 
 print(predicted.tolist()) 
