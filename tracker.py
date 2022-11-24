@@ -80,3 +80,5 @@ model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded) #: 2: lunedi, 1=mercole
 predicted=model.predict([[n]])
 print("giorno in cui potrei allenarmi: ") 
 print(predicted.tolist()) 
+
+print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km "))
