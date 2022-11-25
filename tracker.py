@@ -82,8 +82,30 @@ print("giorno in cui potrei allenarmi: ")
 print(predicted.tolist()) 
 
 print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km "))
+try:
+    giorno1=input("inserisci il giorno:")
+    giorno2=input("inserisci il giorno: ")
+    giorno3=input("inserisci il giorno: ")
+    giorno4=input("inserisci il giorno: ")
+    giorno5=input("inserisci il giorno: ")
+    peso1=float(input("inserisci il peso: "))
+    peso2=float(input("inserisci il peso: "))
+    peso3=float(input("inserisci il peso: "))
+    peso4=float(input("inserisci il peso: "))
+    peso5=float(input("inserisci il peso: "))
+    z = np.array([giorno1,giorno2,giorno3,giorno4,giorno5])
+    v = np.array([peso1,peso2,peso3,peso4,peso5])
 
+    plt.plot(z,v)
 
+    plt.xlabel("giorni")
+    plt.ylabel("peso")
+    plt.show()
 
+    media=(peso1+peso2+peso3+peso4+peso5)/5
+    print("la media settimanale è "+str(media))
 
+    
+except:
+    print("dati inserti non corretti")
 
