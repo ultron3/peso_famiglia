@@ -13,7 +13,7 @@ mycol = mydb["progressi"]
 
 nome=input("inserisci nome: ")
 usr=input("inserisci username: ")
-password=input("inserisci la ppassword: ")
+password=input("inserisci la password: ")
 abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
 allenamento=input("inserisci il tipo di allenamento che vuoi fare")
@@ -33,7 +33,7 @@ mydict={
 
 x = mycol.insert_one(mydict)
 
-print("Ciao mi chiamo Movit Ai il tuo personal virtuale")
+print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
 
 
 print("inizio settimana ")
@@ -46,14 +46,14 @@ try:
     giorno4=input("inserisci il giorno: ")
     giorno5=input("inserisci il giorno: ")
   #inserisco i km che faccio a piedi
-    km1=float(input("inserisci i km fatti: "))
-    km2=float(input("inserisci i km fatti: "))
-    km3=float(input("inserisci i km fatti: "))
-    km4=float(input("inserisci i km fatti: "))
-    km5=float(input("inserisci i km fatti: "))
+    ps1=float(input("inserisci i passi fatti: "))
+    ps2=float(input("inserisci i passi fatti: "))
+    ps3=float(input("inserisci i passi fatti: "))
+    ps4=float(input("inserisci i passi fatti: "))
+    ps5=float(input("inserisci i passi fatti: "))
     
     x = np.array([giorno1,giorno2,giorno3,giorno4,giorno5])
-    y = np.array([km1,km2,km3,km4,km5])
+    y = np.array([ps1,ps2,ps3,ps4,ps5])
 
     plt.plot(x, y)
 
@@ -62,8 +62,8 @@ try:
 
 
     plt.show()
-    media=(km1+km2+km3+km4+km5)/5
-    print("la media settimanale è "+str(media))
+    media=(ps1+ps2+ps3+ps4+ps5)/5
+    print("la media settimanale dei passi  è "+str(media))
 except:
     print("dati inseriti non corretti")
 
