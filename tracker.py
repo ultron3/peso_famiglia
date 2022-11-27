@@ -35,6 +35,11 @@ x = mycol.insert_one(mydict)
 
 print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
 
+c=input("hai impostato un'obiettivo giornaliero:")
+if c =="si":
+    print("ok perfetto")
+else:
+    print("ricordati di farlo")
 
 print("inizio settimana ")
 
