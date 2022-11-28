@@ -127,6 +127,15 @@ lr.fit(x.reshape(-1, 1), y)
 #Predizione
 print(lr.predict([[n]]))
 
+coef = np.polyfit(x,y,1)
+poly1d_fn = np.poly1d(coef)
+
+plt.plot(x,y, 'yo', x, poly1d_fn(x), '-k')
+
+plt.xlim(0, 5)
+plt.ylim(0, 300)
+plt.show()
+
 #da ricontrollare
 try:
     peso=float(input("inserisci il peso: "))
