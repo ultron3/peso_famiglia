@@ -127,7 +127,20 @@ lr.fit(x.reshape(-1, 1), y)
 #Predizione
 print(lr.predict([[n]]))
 
+#da ricontrollare
+try:
+    peso=float(input("inserisci il peso: "))
+    altezza=float(input("inserisci l'altezza: "))
+    BMI=peso/(altezza*altezza)
+    print(BMI)
+except:
+    print("dati inseriti non corretti")
 
+#da ricontrollare
+
+dC = pd.read_csv('bmi.csv')
+
+print(dC.to_string())
 
 
 

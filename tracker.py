@@ -26,9 +26,6 @@ mydict={
     "indirizzo":abitazione,
     "palestra": palestra,
     "allenamento":allenamento
-
-
-   
 }
 
 x = mycol.insert_one(mydict)
@@ -121,20 +118,9 @@ except:
 
 
 print(nome+str(" per un buon andamento monitora il tuo peso giornaliero "))
-try:
-    peso=float(input("inserisci il peso: "))
-    altezza=float(input("inserisci l'altezza: "))
-    BMI=peso/(altezza*altezza)
-    print(BMI)
-except:
-    print("dati inseriti non corretti")
 
 
-
-dC = pd.read_csv('bmi.csv')
-
-print(dC.to_string()) 
-
+print("grafico peso giornaliero")
 try:
     giorno1=input("inserisci il giorno:")
     giorno2=input("inserisci il giorno: ")
@@ -167,12 +153,6 @@ print("ciao "+str(nome)+str(" guarda gli altri utenti quali allenamenti hanno  s
 df = pd.read_json('utenti.json')
 
 print(df.to_string()) 
-
-
-
-
-
-
 
 #apro un documento excel utilizzando la libreria openpyxl
 import openpyxl
