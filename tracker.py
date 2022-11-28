@@ -90,7 +90,7 @@ predicted=model.predict([[n]])
 print("giorno in cui potrei allenarmi: ") 
 print(predicted.tolist()) 
 
-print("ciao "+str(nome)+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str("hai scelto di fare ")+str(allenamento))
+print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str("hai scelto di fare ")+str(allenamento))
 
 try:
 
@@ -151,6 +151,17 @@ try:
     
 except:
     print("dati inserti non corretti")
+
+print("ciao "+str(nome)+str(" guarda gli altri utenti quali allenamenti hanno  scelto "))
+
+df = pd.read_json('utenti.json')
+
+print(df.to_string()) 
+
+
+
+
+
 
 
 #apro un documento excel utilizzando la libreria openpyxl

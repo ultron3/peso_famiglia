@@ -1,0 +1,46 @@
+[
+    {
+        "_id": {
+          "$oid": "6381def11dbfe88bed036b80"
+        },
+        "nome": "alex",
+        "username": "alexboy20",
+        "pasasword": "brqwerty2$",
+        "indirizzo": "foglizzo",
+        "palestra": "gimmy sport caluso",
+        "allenamento": " cardio-totalbody"
+      },
+      {
+        "_id": {
+          "$oid": "6381e1f6963654269ab99964"
+        },
+        "nome": "riccardo",
+        "username": "xmooro",
+        "pasasword": "usermoro",
+        "indirizzo": "ivrea",
+        "palestra": "orange",
+        "allenamento": " full-contactt"
+      },
+      {
+        "_id": {
+          "$oid": "6382085c9c96f68d42300f7b"
+        },
+        "nome": "bruno",
+        "username": "brone",
+        "pasasword": "ndfdj",
+        "indirizzo": "caluso",
+        "palestra": "gimmy sport",
+        "allenamento": "cardio"
+      },
+      {
+        "_id": {
+          "$oid": "6383a6b76f67f9d446d2b111"
+        },
+        "nome": "danilo",
+        "username": "danidani",
+        "pasasword": "fdds",
+        "indirizzo": "montanaro",
+        "palestra": "orange torino",
+        "allenamento": " total body"
+      }
+]
