@@ -122,8 +122,14 @@ except:
 
 print(nome+str(" per un buon andamento monitora il tuo peso giornaliero "))
 
+peso=float(input("inserisci il peso: "))
+altezza=float(input("inserisci l'altezza: "))
+BMI=peso/(altezza*altezza)
+print(BMI)
 
+dC = pd.read_csv('bmi.csv')
 
+print(dC.to_string()) 
 
 try:
     giorno1=input("inserisci il giorno:")
