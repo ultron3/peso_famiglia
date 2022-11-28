@@ -90,7 +90,7 @@ predicted=model.predict([[n]])
 print("giorno in cui potrei allenarmi: ") 
 print(predicted.tolist()) 
 
-print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str("hai scelto di fare ")+str(allenamento))
+print("ciao "+str(nome)+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str("hai scelto di fare ")+str(allenamento))
 
 try:
 
