@@ -42,5 +42,27 @@
         "indirizzo": "montanaro",
         "palestra": "orange torino",
         "allenamento": " total body"
+      },
+      {
+        "_id": {
+          "$oid": "63846d0fc7490c817baabdd9"
+        },
+        "nome": "francesco",
+        "username": "frank",
+        "pasasword": "hh",
+        "indirizzo": "foglizzo",
+        "palestra": "mios caluso",
+        "allenamento": " fisioterapia"
+      },
+      {
+        "_id": {
+          "$oid": "6384753022b01d672d89cc00"
+        },
+        "nome": "graziella",
+        "username": "gra",
+        "pasasword": "56",
+        "indirizzo": "foglizzo",
+        "palestra": "gimmy",
+        "allenamento": "nessuno"
       }
 ]
