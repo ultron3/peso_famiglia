@@ -159,14 +159,4 @@ import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
 
-#scrivo un file txt
-f = open("peso.txt", "a")
-f.write("copia di backup")
-f.close()
-
-#open and read the file after the appending:
-f = open("peso.txt", "r")
-print(f.read())
-
-
 
