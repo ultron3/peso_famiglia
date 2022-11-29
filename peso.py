@@ -50,42 +50,6 @@ plt.ylabel("peso")
 
 plt.show()
 
-#calcolo medie carico esercizi
-try:
-
-    esercizio=input("inserisci il nome  dell'esercizio: ")
-    print(esercizio)
-
-    serie=int(input("inserisci quante serie fai: "))
-    
-    kg1=float(input("inserisci i kili: "))
-    kg2=float(input("inserisci i kili: "))
-    kg3=float(input("inserisci i kili: "))
-    
-    if serie == 2:
-        
-        media=(kg1+kg2)/2
-        print("la media dell'esercizio "+str(media))
-    elif serie > 2:
-        media=(kg1+kg2+kg3)/3
-        print("la media è"+str(media))
-    else:
-        print("dati inseriti non corretti")
-
-
-except:
-    print("dati inseriti non corretti")
-
-
-
-try:
-    bike=float(input("inserisci quanti kilometri fai con la bici: "))
-    ciclette=float(input("inserisci quanti km fai con la cyclette: "))
-    tappeto=float(input("inserisci quanti km fai con il tappeto: "))
-    media=(bike+ciclette+tappeto)/3
-    print("la media dei km è:"+str(media))
-except:
-    print("dati inseriti non corretti")
 
 #do il comando di aprire un file in jsonata
 
