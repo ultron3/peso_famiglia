@@ -130,6 +130,7 @@ print(df.to_string())
 
 #apro un documento excel utilizzando la libreria openpyxl
 #per capire che il file in excel è aperto il programma scrive class workbook.worbook
+#attenzione se si sbaglia a scrivere su una cella il programma non si rompe ma ti dice che c'è un errore in una cella speicifica
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
