@@ -12,15 +12,17 @@ mydb = myclient["dbmpalestra"]
 mycol = mydb["progressi"]
 
 nome=input("inserisci nome: ")
+cognome=input("inserisci cognome: ")
 usr=input("inserisci username: ")
 password=input("inserisci la password: ")
 abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
-allenamento=input("inserisci il tipo di allenamento che vuoi fare")
+allenamento=input("inserisci il tipo di allenamento che vuoi fare: ")
 
 
 mydict={ 
     "nome": nome, 
+    "cognome":cognome,
     "username" :usr,
     "pasasword":password,
     "indirizzo":abitazione,
@@ -89,35 +91,7 @@ print(predicted.tolist())
 
 print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str("hai scelto di fare ")+str(allenamento))
 
-try:
-
-    esercizio=input("inserisci il nome  dell'esercizio: ")
-    print(esercizio)
-
-    serie=int(input("inserisci quante serie fai: "))
-    
-    kg1=float(input("inserisci i kili: "))
-    kg2=float(input("inserisci i kili: "))
-    kg3=float(input("inserisci i kili: "))
-    
-    if serie == 2:
-        
-        media=(kg1+kg2)/2
-        print("la media dell'esercizio "+str(media))
-    elif serie > 2:
-        media=(kg1+kg2+kg3)/3
-        print("la media è"+str(media))
-    else:
-        print("dati inseriti non corretti")
-
-
-except:
-    print("dati inseriti non corretti")
-
-
-
-
-print(nome+str(" per un buon andamento monitora il tuo peso giornaliero "))
+print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giornaliero "))
 
 
 print("grafico peso giornaliero")
@@ -150,11 +124,12 @@ except:
 
 print("ciao "+str(nome)+str(" guarda gli altri utenti quali allenamenti hanno  scelto "))
 
+#backup dei dati salvati su mongo db
 df = pd.read_json('utenti.json')
-
 print(df.to_string()) 
 
 #apro un documento excel utilizzando la libreria openpyxl
+#per capire che il file in excel è aperto il programma scrive class workbook.worbook
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))

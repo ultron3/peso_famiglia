@@ -4,6 +4,7 @@
           "$oid": "6381def11dbfe88bed036b80"
         },
         "nome": "alex",
+        "cognome":"gnavi",
         "username": "alexboy20",
         "pasasword": "brqwerty2$",
         "indirizzo": "foglizzo",
@@ -15,6 +16,7 @@
           "$oid": "6381e1f6963654269ab99964"
         },
         "nome": "riccardo",
+        "cognome":"morini",
         "username": "xmooro",
         "pasasword": "usermoro",
         "indirizzo": "ivrea",
@@ -26,6 +28,7 @@
           "$oid": "6382085c9c96f68d42300f7b"
         },
         "nome": "bruno",
+        "cognome":"gnavi",
         "username": "brone",
         "pasasword": "ndfdj",
         "indirizzo": "caluso",
@@ -37,6 +40,7 @@
           "$oid": "6383a6b76f67f9d446d2b111"
         },
         "nome": "danilo",
+        "cognome":"boscolo",
         "username": "danidani",
         "pasasword": "fdds",
         "indirizzo": "montanaro",
@@ -48,6 +52,7 @@
           "$oid": "63846d0fc7490c817baabdd9"
         },
         "nome": "francesco",
+        "cognome":"piazza",
         "username": "frank",
         "pasasword": "hh",
         "indirizzo": "foglizzo",
@@ -59,6 +64,7 @@
           "$oid": "6384753022b01d672d89cc00"
         },
         "nome": "graziella",
+        "cognome":"penoncello",
         "username": "gra",
         "pasasword": "56",
         "indirizzo": "foglizzo",
