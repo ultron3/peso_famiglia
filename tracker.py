@@ -73,7 +73,7 @@ except:
 
 #utilizzo modello gaussiano
 
-n=int(input("inserisci un numero (deve essere 0[lunedi], 1[mercoledi], 2[venerdi]):  "))
+n=int(input("inserisci un numero, tra parentesi sono segnati i possibili risultati  ( 0[lunedi], 1[mercoledi], 2[venerdi]):  "))
 
 giorni_allenamento=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato"]
 uscita=["si","no","si","no","si","si"]
