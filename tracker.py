@@ -105,6 +105,7 @@ uscita_encoded=le.fit_transform(uscita)
 model = GaussianNB()
 model.fit (list(zip(tempo_encoded, uscita_encoded,strict=True)),temperatura_encoded)
 predicted=model.predict([[n1,n2]]) #: 2: Sole, 1=Pioggia, 0: Nuvoloso.
+print("le previsioni sono:")
 print(predicted.tolist()) 
 
 
