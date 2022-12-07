@@ -95,14 +95,13 @@ print(nome+str(" questa settimana hai una media di ")+str(media)+str(" km ")+str
 print("Posso controllare anche le previsioni se oggi ottimo è per allenarsi")
 n1=int(input("inserisci un numero: "))
 n2=int(input("inserisci un numero: "))
-tempo=['Sole','Sole','Pioggia','Pioggia','Nuvoloso']
-temperatura=['Caldo','Caldo','Freddo','Tiepido','Tiepido']
-uscita=['Si','Si','No','Si','Si']
+tempo=['Sole','Sole','Pioggia','Pioggia','Nuvoloso','Pioggia','Sole']
+temperatura=['Caldo','Caldo','Freddo','Tiepido','Tiepido','Freddo','Freddo']
+uscita=['Si','Si','No','Si','Si','No','Si']
 le = preprocessing.LabelEncoder() # Creo il label encoder (chiamato dunque "le")
 tempo_encoded=le.fit_transform(tempo)
 temperatura_encoded=le.fit_transform(temperatura)
 uscita_encoded=le.fit_transform(uscita)
-
 model = GaussianNB()
 model.fit (list(zip(tempo_encoded, uscita_encoded,strict=True)),temperatura_encoded)
 predicted=model.predict([[n1,n2]]) #: 2: Sole, 1=Pioggia, 0: Nuvoloso.
