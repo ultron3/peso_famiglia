@@ -61,7 +61,7 @@ print(df.to_string())
 
 
 #modello gaussiano
-
+n=int(input("inserisci un numero: "))
 giorni=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato","domenica"]
 uscita=["si","no","si","no","si","no","no"]
 from sklearn import preprocessing
@@ -71,7 +71,7 @@ uscita_encoded=le.fit_transform(uscita)
 from sklearn.naive_bayes import GaussianNB 
 model = GaussianNB()
 model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded)
-predicted=model.predict([[2]])
+predicted=model.predict([[n]])
 print("il risultato è:") 
 print(predicted.tolist()) 
 
