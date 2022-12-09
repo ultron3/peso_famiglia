@@ -129,8 +129,8 @@ print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giorna
 
 
 n3=int(input("insersci un numero:"))
-somatotipo=['endomorfo','mesomorfo','ectomorfo']
-dieta=['carboidrati','proteine','zuccheri']
+somatotipo=['endomorfo','mesomorfo','ectomorfo','ectomorfo']
+dieta=['carboidrati','proteine','zuccheri','zuccheri']
 le = preprocessing.LabelEncoder()
 somatotipo_encoded = le.fit_transform(somatotipo)
 dieta_encoded=le.fit_transform(dieta)
