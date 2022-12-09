@@ -18,6 +18,8 @@ password=input("inserisci la password: ")
 abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
 allenamento=input("inserisci il tipo di allenamento che vuoi fare: ")
+corporatura=input("inserisci il tuo somatotipo (Endomorfo, mesomorfo ed ectomorfo): ")
+
 
 
 mydict={ 
@@ -27,7 +29,9 @@ mydict={
     "pasasword":password,
     "indirizzo":abitazione,
     "palestra": palestra,
-    "allenamento":allenamento
+    "allenamento":allenamento,
+    "somatotipo":corporatura
+
 }
 
 x = mycol.insert_one(mydict)
@@ -124,6 +128,17 @@ print(predicted.tolist())
 print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giornaliero "))
 
 
+n3=int(input("insersci un numero:"))
+somatotipo=['endomorfo','mesomorfo','ectomorfo']
+dieta=['carboidrati','proteine','zuccheri']
+le = preprocessing.LabelEncoder()
+somatotipo_encoded = le.fit_transform(somatotipo)
+dieta_encoded=le.fit_transform(dieta)
+model=GaussianNB()
+model.fit(somatotipo_encoded.reshape(-1, 1), dieta_encoded) 
+predicted=model.predict([[n3]])  
+print("risultato dieta per il tipo di somatotipo: ")   #da rivedere 
+print(predicted.tolist()) 
 
 
 print("grafico peso giornaliero")

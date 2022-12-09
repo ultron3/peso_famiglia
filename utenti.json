@@ -9,7 +9,8 @@
         "pasasword": "brqwerty2$",
         "indirizzo": "foglizzo",
         "palestra": "gimmy sport caluso",
-        "allenamento": " cardio-totalbody"
+        "allenamento": " cardio-totalbody",
+        "somatotipo":"endomorfo"
       },
       {
         "_id": {
@@ -21,7 +22,8 @@
         "pasasword": "usermoro",
         "indirizzo": "ivrea",
         "palestra": "orange",
-        "allenamento": " full-contactt"
+        "allenamento": " full-contactt",
+        "somatotipo":"ectomorfo"
       },
       {
         "_id": {
@@ -33,7 +35,8 @@
         "pasasword": "ndfdj",
         "indirizzo": "caluso",
         "palestra": "gimmy sport",
-        "allenamento": "cardio"
+        "allenamento": "cardio",
+        "somatotipo":"endomorfo"
       },
       {
         "_id": {
@@ -45,7 +48,8 @@
         "pasasword": "fdds",
         "indirizzo": "montanaro",
         "palestra": "orange torino",
-        "allenamento": " total body"
+        "allenamento": " total body",
+        "somatotipo":"mesomorfo"
       },
       {
         "_id": {
@@ -57,7 +61,8 @@
         "pasasword": "hh",
         "indirizzo": "foglizzo",
         "palestra": "mios caluso",
-        "allenamento": " fisioterapia"
+        "allenamento": " fisioterapia",
+        "somatotipo":"endomorfo"
       },
       {
         "_id": {
@@ -69,6 +74,7 @@
         "pasasword": "56",
         "indirizzo": "foglizzo",
         "palestra": "gimmy",
-        "allenamento": "nessuno"
+        "allenamento": "nessuno",
+        "somatotipo":"ectomorfo"
       }
 ]
