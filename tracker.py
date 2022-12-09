@@ -34,6 +34,18 @@ x = mycol.insert_one(mydict)
 
 print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
 
+
+#implementazione di un nuovo algoritmo
+#algoritmo reversed
+list1=[abitazione,palestra,allenamento]
+list2=[abitazione,palestra,allenamento]
+print(f"1.)'list1' reversed:"
+    f"{list1[::-1]}")
+list2.reverse()
+print(f"2.)'list2' reversed:"
+     f"{list2}")
+
+
 c=input("hai impostato un'obiettivo giornaliero:")
 if c =="si":
     print("ok perfetto")
