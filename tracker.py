@@ -126,7 +126,7 @@ print(predicted.tolist())
 
 
 print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giornaliero "))
-
+print(nome+str(" posso controllare la tua dieta per il tuo tipo di corpo "))
 #aggiunto algoritmo che diagnostica la dieta in base al somatotipo
 n3=int(input("insersci un numero:"))
 somatotipo=['endomorfo','mesomorfo','ectomorfo','ectomorfo']
