@@ -71,8 +71,11 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>ALEX</string>
+    </property>
     <property name="placeholderText">
-     <string>NOME:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_3">
@@ -84,8 +87,11 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>GNAVI</string>
+    </property>
     <property name="placeholderText">
-     <string>COGNOME:</string>
+     <string/>
     </property>
    </widget>
   </widget>
