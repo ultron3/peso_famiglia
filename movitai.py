@@ -1,6 +1,7 @@
 print("Per accedere all'applicazione Movit Ai  inquadrare codice qr")
 import pyqrcode
 from PIL import Image
+
 link= input ("enter anithing to generate QR: ")
 qr_code= pyqrcode.create(link) #https://twitter.com/clcoding
 qr_code.png("QRCode.png",scale=5)
