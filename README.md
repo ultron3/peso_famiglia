@@ -4,3 +4,4 @@ qua https://code.tutsplus.com/it/tutorials/how-to-work-with-excel-documents-usin
 L'estensione scariscata è Excel Viewer; è possibile aprire il file excel anche con numpy.
 Altre estensioni utilizzate sono Mongodb for vs code 
 ho diviso per comodità di prova alcune funzioni di machine lerning per provare sui file jupyter
+ho aggiunto altre due librie pypng e pyqrcode
