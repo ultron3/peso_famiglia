@@ -1,3 +1,5 @@
+#utilizzo la libreria pyprcode, pypng
+
 print("Per accedere all'applicazione Movit Ai  inquadrare codice qr")
 import pyqrcode
 from PIL import Image
