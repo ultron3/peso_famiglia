@@ -125,7 +125,7 @@ print("le previsioni sono:")
 print(predicted.tolist()) 
 
 
-print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giornaliero "))
+print(nome+str(" ricordati che per un buon andamento monitora il tuo peso giornaliero  "))
 print(nome+str(" posso controllare la tua dieta per il tuo tipo di corpo "))
 #aggiunto algoritmo che diagnostica la dieta in base al somatotipo
 n3=int(input("insersci un numero:"))
@@ -137,7 +137,7 @@ dieta_encoded=le.fit_transform(dieta)
 model=GaussianNB()
 model.fit(somatotipo_encoded.reshape(-1, 1), dieta_encoded) 
 predicted=model.predict([[n3]])  
-print("risultato dieta per il tipo di somatotipo: ")   #da rivedere 
+print("risultato dieta per il tipo di somatotipo  ( 0[carboidrati], 1[proteine], 2[zuccheri/grassi])  : ")   #da rivedere 
 print(predicted.tolist()) 
 
 
@@ -175,4 +175,16 @@ print("ciao "+str(nome)+str(" guarda gli altri utenti quali allenamenti hanno  s
 df = pd.read_json('utenti.json')
 print(df.to_string()) 
 
+#inserisco la funzione import calendar
+print("Per vedere i progressi precedenti basta che inserisci l'anno e il mese")
+import calendar 
+anno=int(input("inserisci l'anno: "))
+mese=int(input("inserisci il mese: "))
+year=anno
+month=mese
+print(calendar.month(year,month))
 
+if anno < 2022:
+    print("non ci sono dati ")
+else:
+    print("i dati sono:")
