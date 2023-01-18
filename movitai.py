@@ -1,10 +1,24 @@
-#utilizzo la libreria pyprcode, pypng
+#utilizzo la libreria pyprcode, pypng, langdetect
 
-print("Per accedere all'applicazione Movit Ai  inquadrare codice qr")
+from langdetect import detect
+
+text= input("enter any text in any language: ")
+
+print( detect(text))
+if text == "italiano":
+      
+
+  print("Per accedere all'applicazione Movit Ai  inquadrare codice qr")
+  link= input ("link per generare QRcode: ")
+else:
+   print("Scan the qr code to access the Movit Ai application")
+   link=input("generate link for QRcode: ")   
+
+
 import pyqrcode
 from PIL import Image
 
-link= input ("link per generare QRcode: ")
+
 qr_code= pyqrcode.create(link) #https://twitter.com/clcoding
 qr_code.png("QRCode.png",scale=5)
 Image.open("QRCode.png")
