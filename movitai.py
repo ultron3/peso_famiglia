@@ -2,7 +2,7 @@
 
 from langdetect import detect
 
-text= input("enter any text in any language: ")
+text = input("enter any text in any language: ")
 
 print( detect(text))
 if text == "italiano":
@@ -10,9 +10,13 @@ if text == "italiano":
 
   print("Per accedere all'applicazione Movit Ai  inquadrare codice qr")
   link= input ("link per generare QRcode: ")
+  print("Ricordati che devi impostare una password")
+  passlen= int(input("inserisci un numero per la generazione della password:"))
 else:
    print("Scan the qr code to access the Movit Ai application")
-   link=input("generate link for QRcode: ")   
+   link=input("generate link for QRcode: ")
+   print("Remember that you need to set a password")
+   passlen= int(input("enter the lenght of password:"))   
 
 
 import pyqrcode
@@ -23,6 +27,14 @@ qr_code= pyqrcode.create(link) #https://twitter.com/clcoding
 qr_code.png("QRCode.png",scale=5)
 Image.open("QRCode.png")
 
+#genero una password per l'applicazione
+
+
+import random
+
+s="abcdefghijklmnopqrstuvwxyz1234567890?#*&%$"
+p="".join(random.sample(s,passlen))
+print(p)
 
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
