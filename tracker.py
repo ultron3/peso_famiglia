@@ -186,5 +186,9 @@ print(calendar.month(year,month))
 
 if anno < 2022:
     print("non ci sono dati ")
+
 else:
     print("i dati sono:")
+    #se i dati ci sono il programma apre un file di backup dei dati
+    dc=pd.read_json('dati.json')
+    print(dc.to_string())
