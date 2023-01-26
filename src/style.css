@@ -5,3 +5,8 @@ p{font-family: 'Times New Roman', Times, serif;}
 select{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
