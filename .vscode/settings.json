@@ -1,3 +1,13 @@
-{
-    "php.validate.executablePath": ""
-}
+[
+    {
+        "php.validate.executablePath": ""
+    },
+    {
+        "liveServer.settings.root": "/SRC",
+        "files.autoSave": "afterDelay",
+        "workbench.layoutControl.enabled": false,
+        "cmake.configureOnOpen": true,
+        "editor.accessibilitySupport": "off",
+        "php.validate.executablePath": ""
+    }
+]
