@@ -78,7 +78,7 @@ try:
     plt.plot(x, y)
 
     plt.xlabel("giorni")
-    plt.ylabel("km fatti")
+    plt.ylabel("passi fatti")
 
 
     plt.show()
