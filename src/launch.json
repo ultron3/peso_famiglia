@@ -1,0 +1,24 @@
+[
+    {
+        "name":"localhost:(Edge)",
+        "type":"edge",
+        "request":"launch",
+        "url":"http://localhost:5500",
+        "webroot":"${workspacefolder}\\public"
+    },
+    {
+        "name":"localhost:(Chrome)",
+        "type":"chrome",
+        "request":"launch",
+        "url":"http://localhost:5500",
+        "webroot":"${workspacefolder}\\public"
+    },
+    {
+        "name":"localhost:(Brave)",
+        "type":"brave",
+        "request":"launch",
+        "url":"http://localhost:5500",
+        "webroot":"${workspacefolder}\\public"
+    }
+
+]
