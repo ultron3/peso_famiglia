@@ -13,6 +13,6 @@ circle(50,200)
 forward(133)
 end_fill()
 
-
+print("grazie per il supporto")
 
 #non centra nulla con il progetto peso-familia,
