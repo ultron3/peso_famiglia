@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/output1.png</pixmap>
+     <pixmap>output1.png</pixmap>
     </property>
     <property name="openExternalLinks">
      <bool>false</bool>
@@ -46,7 +46,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/output2.png</pixmap>
+     <pixmap>output2.png</pixmap>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
