@@ -4,5 +4,5 @@ window.addEventListener("blur",()=>{
 });
 
 window.addEventListener("focus",()=>{
-
+return
 });
