@@ -100,20 +100,6 @@ plt.xlim(0, 5)
 plt.ylim(0, 300)
 plt.show()
 
-#da ricontrollare
-try:
-    peso=float(input("inserisci il peso: "))
-    altezza=float(input("inserisci l'altezza: "))
-    BMI=peso/(altezza*altezza)
-    print(BMI)
-except:
-    print("dati inseriti non corretti")
-
-#da ricontrollare
-
-dC = pd.read_csv('bmi.csv')
-
-print(dC.to_string())
 
 
 
