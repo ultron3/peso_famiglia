@@ -106,16 +106,11 @@ plt.show()
 #apro un documento excel utilizzando la libreria openpyxl
 #per capire che il file in excel è aperto il programma scrive class workbook.worbook
 #attenzione se si sbaglia a scrivere su una cella il programma non si rompe ma ti dice che c'è un errore in una cella speicifica
-import openpyxl
+
 import openpyxl
 excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
 print (type(excel_document))
 
-sheet = excel_document.get_sheet_by_name('Foglio1')
-print (sheet['D9'].value)
-
-sheet = excel_document.get_sheet_by_name('Foglio1')
-print (sheet['E9'].value)
 
 import mysql.connector
 
