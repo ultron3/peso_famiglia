@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: 'Times New Roman', Times, serif,
+    
+}
+
 .container{
     padding:40px 60px;
     background:#fff;
