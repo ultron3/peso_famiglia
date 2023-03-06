@@ -3,7 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
-
+body{
+    display: flex;
+   
+}
 p{
     font-family: 'Times New Roman', Times, serif,
     
