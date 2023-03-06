@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.container{
+    padding:40px 60px;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    border:5px solid rgba(190, 190, 190, 0);
+    box-shadow:0 0 15px rgba(100, 100, 100, 0.3);
+    flex-direction:column;
+
+}
+
 input{
     padding: 10px 20px;
     width: 300;
