@@ -9,8 +9,8 @@ window.addEventListener("focus", () => {
 
 function generateQR() {
     document.querySelector("#qr-image").style.display = "block";
-    let Qrtext = document.querySelector("#text").ariaValueMax;
-    if (Qrtext.trim().length==0) {
+    let Qrtext = document.querySelector("#text").value;
+    if (Qrtext.trim().length()==0){
 
         document.querySelector("#qr-image .error").innerHTML = "enter text";
         document.querySelector("#img").style.display = "none";
