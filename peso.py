@@ -60,20 +60,7 @@ df = pd.read_json('famiglia.json')
 print(df.to_string()) 
 
 
-#modello gaussiano
-n=int(input("inserisci un numero: "))
-giorni=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato","domenica"]
-uscita=["si","no","si","no","si","no","no"]
-from sklearn import preprocessing
-le = preprocessing.LabelEncoder() # Creo il label encoder (chiamato dunque "le")
-giorni_encoded=le.fit_transform(giorni)
-uscita_encoded=le.fit_transform(uscita)
-from sklearn.naive_bayes import GaussianNB 
-model = GaussianNB()
-model.fit(giorni_encoded.reshape(-1, 1), uscita_encoded)
-predicted=model.predict([[n]])
-print("il risultato è:") 
-print(predicted.tolist()) 
+
 
 #regressione lineare tra altezza e peso
 
@@ -99,18 +86,6 @@ plt.plot(x,y, 'yo', x, poly1d_fn(x), '-k')
 plt.xlim(0, 5)
 plt.ylim(0, 300)
 plt.show()
-
-
-
-
-#apro un documento excel utilizzando la libreria openpyxl
-#per capire che il file in excel è aperto il programma scrive class workbook.worbook
-#attenzione se si sbaglia a scrivere su una cella il programma non si rompe ma ti dice che c'è un errore in una cella speicifica
-
-import openpyxl
-excel_document = openpyxl.load_workbook('progressi_palestra.xlsx')
-print (type(excel_document))
-
 
 import mysql.connector
 
