@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <script src="index.js"></script>
 </head>
@@ -157,7 +158,21 @@
     
       </script>
 
+<div class="container">
+  <input type="text" id="text" placholder="enter text" class="input">
+  <button type="button" onclick="generateQR()">
+    Generate QR
 
+  </button >
+  <div id="qr-image">
+    <span class="error"></span><br>
+    <img src="" id="img">
+  
+
+  </div>
+
+
+</div>
 
 
 
