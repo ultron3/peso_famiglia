@@ -18,7 +18,7 @@ function generateQR() {
         document.querySelector("#img").style.display = "none";
     } else {
         document.querySelector("#img").style.display = "block";
-       // document.querySelector("#qr-img .error").innerHTML = "error";  NOT IMPLEMENTED
+        //document.querySelector("#qr-img .error").innerHTML = "error"; 
         document.querySelector("#img").src = "https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" + Qrtext;
     }
 
