@@ -169,26 +169,7 @@ try:
 except:
     print("dati inserti non corretti")
 
-print("ciao "+str(nome)+str(" guarda gli altri utenti quali allenamenti hanno  scelto "))
 
-#backup dei dati salvati su mongo db
-df = pd.read_json('utenti.json')
-print(df.to_string()) 
 
-#inserisco la funzione import calendar
-print("Per vedere i progressi precedenti basta che inserisci l'anno e il mese")
-import calendar 
-anno=int(input("inserisci l'anno: "))
-mese=int(input("inserisci il mese: "))
-year=anno
-month=mese
-print(calendar.month(year,month))
 
-if anno < 2022:
-    print("non ci sono dati ")
 
-else:
-    print("i dati sono:")
-    #se i dati ci sono il programma apre un file di backup dei dati
-    dc=pd.read_json('dati.json')
-    print(dc.to_string())
