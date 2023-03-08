@@ -1,5 +1,21 @@
 console.log("SCRIPT OK")
 
+let msg = 'ciao';
+
+const pi=3.14; 
+
+if (msg === 'ciao'){
+    alert('Ciao MovitAi ti da il benvenuto, ecco i tuoi risultati, seguici su i nostri social, stampa il file attraverso il QRcode');
+}else{
+    alert('il messaggio non contiene ciao');
+}
+
+for (let i=0;i<10;i++){
+    console.log(i)
+}
+
+
+
 let docTitle = document.title;
 window.addEventListener("blur", () => {
     document.title = "torna qui;(";
@@ -8,8 +24,6 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     return
 });
-
-
 
 
 
