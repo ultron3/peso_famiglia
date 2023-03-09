@@ -96,4 +96,41 @@ img{
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
 
- 
+/* The switch - questo nasconde l'elemento di input */
+input[type=checkbox] {
+  display: none;
+}
+
+/* The slider - questo crea lo stile dello switch */
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.2s;
+}
+
+/* The thumb - questo crea la "maniglia" dello switch */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+/* Aggiungiamo la classe "on" all'elemento di input selezionato */
+input[type=checkbox]:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Muoviamo la "maniglia" dello switch in base allo stato dell'elemento di input */
+input[type=checkbox]:checked + .slider:before {
+  transform: translateX(26px);
+}

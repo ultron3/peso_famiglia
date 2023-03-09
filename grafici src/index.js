@@ -55,3 +55,18 @@ function myFunction() {
       }
     }
   }
+
+
+
+  const switchElement = document.getElementById('switch');
+
+  switchElement.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      console.log('Lo switch è stato attivato!');
+      // Esegui azione quando lo switch è stato attivato
+    } else {
+      console.log('Lo switch è stato disattivato!');
+      // Esegui azione quando lo switch è stato disattivato
+    }
+  });
+  
