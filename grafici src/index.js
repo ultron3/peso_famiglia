@@ -8,7 +8,7 @@ console.log('Ciao MovitAi ti da il benvenuto, ecco i tuoi risultati, seguici su 
 
 
 
-
+//messaggio nella tab
 let docTitle = document.title;
 window.addEventListener("blur", () => {
     document.title = "torna qui;(";
