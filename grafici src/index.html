@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chart</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <script src="index.js"></script>
-    
-</head>
-<body>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"> social</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Discord</a>
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
-      <a href="#">Twitch(segui le noste live)</a>
-      
-    </div>
-  </div>
 
-  
+  </head>
+  <body>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"> social</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitch(segui le noste live)</a>
+
+      </div>
+    </div>
+
+
     <div class="container">
 
-        <canvas id="myChart"></canvas>
+      <canvas id="myChart"></canvas>
 
-    
- 
+
+
     </div>
-    
+
 
 
 
@@ -171,28 +173,26 @@ let myChart = document.getElementById("myChart").getContext("2d");
         
     
     </script>
+    <div class="container">
+      <input type="text" id="text" placholder="enter text" class="input">
+      <button type="button" onclick="generateQR()">
+        Genera QR per stampare il file dei risultati
 
-<div class="container">
-  <input type="text" id="text" placholder="enter text" class="input">
-  <button type="button" onclick="generateQR()">
-    Genera QR per stampare il file dei risultati
+      </button>
+      <div id="qr-image">
+        <span class="error"></span><br>
+        <img src="" id="img">
 
-  </button >
-  <div id="qr-image">
-    <span class="error"></span><br>
-    <img src="" id="img">
-  
 
-  </div>
-<br><br>
-<label>Per accettare la politica sulla privacy cliccare sullo switch
-  <br>
-  <input type="checkbox" id="switch">
-  <span class="slider"></span>
-</label>
+      </div>
+      <br><br>
+      <label>Per accettare la politica sulla privacy cliccare sullo switch
+        <br>
+        <input type="checkbox" id="switch">
+        <span class="slider"></span>
+      </label>
 
-</div>
-
+    </div>
 
 
 
@@ -200,5 +200,6 @@ let myChart = document.getElementById("myChart").getContext("2d");
 
 
 
-</body>
+
+  </body>
 </html>
