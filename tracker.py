@@ -38,7 +38,7 @@ x = mycol.insert_one(mydict)
 
 print("Per l'auteticazione registrare la propria voce ")
 #registro la voce per l'autenticazione
-import sounddevice
+import sounddevice #la libreia si chiama souddevice
 from scipy.io.wavfile import write
 fs=44100 #sample_rate
 second=5 #enter your required time..
