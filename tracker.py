@@ -175,7 +175,10 @@ try:
 except:
     print("dati inserti non corretti")
 
+#aggiungo la possibilità di inviare le notifiche
 
 
-
+import win10toast
+toaster = win10toast.ToastNotifier()
+toaster.show_toast("Contalla l'app! Hai una nuova notifica", duration=10)
 
