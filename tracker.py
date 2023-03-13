@@ -36,6 +36,20 @@ mydict={
 
 x = mycol.insert_one(mydict)
 
+print("Per l'auteticazione registrare la propria voce ")
+#registro la voce per l'autenticazione
+import sounddevice
+from scipy.io.wavfile import write
+fs=44100 #sample_rate
+second=5 #enter your required time..
+print("Recording....\n")
+record_voice=sounddevice.rec(int(second * fs),samplerate=fs,channels=2)
+sounddevice.wait()
+write("out.wav",fs,record_voice)
+print("Finished...\nPlease Check it...")
+
+
+
 print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
 
 
