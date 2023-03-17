@@ -161,7 +161,7 @@ except:
 
 #aggiungo la possibilità di inviare le notifiche
 
-
+#da aggiornare dopo aver aggiornato a python3.11
 import win10toast
 toaster = win10toast.ToastNotifier()
 toaster.show_toast("Contalla l'app! Hai una nuova notifica", duration=10)
