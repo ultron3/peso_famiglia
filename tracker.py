@@ -15,6 +15,7 @@ nome=input("inserisci nome: ")
 cognome=input("inserisci cognome: ")
 usr=input("inserisci username: ")
 password=input("inserisci la password: ")
+email=input("inserisci l'email")
 abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
 allenamento=input("inserisci il tipo di allenamento che vuoi fare: ")
@@ -27,6 +28,7 @@ mydict={
     "cognome":cognome,
     "username" :usr,
     "pasasword":password,
+    "email":email,
     "indirizzo":abitazione,
     "palestra": palestra,
     "allenamento":allenamento,
@@ -47,7 +49,18 @@ record_voice=sounddevice.rec(int(second * fs),samplerate=fs,channels=2)
 sounddevice.wait()
 write("out.wav",fs,record_voice)
 print("Finished...\nPlease Check it...")
+#generazione otp
+#importo la libreria  random
+print("dopo aver fatto l'autenticazione vicale,controlla nell'email, il codice otp da inserire")
+import random
 
+def gen_otp(digit):     #generazione otp
+    otp=random.randrange(1,10)
+    for otp in range(digit-1):
+        otp=(otp+10)+random.randrange(0,10)
+        return otp
+otp1=gen_otp(6)
+print(otp1)
 
 
 print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
