@@ -69,6 +69,33 @@ function myFunction() {
       // Esegui azione quando lo switch è stato disattivato
     }
   });
+
+
+
+  function notify(title, options) {
+ 
+    options = options || {};
+   
+    // Controlla che il browser supporta le Notification API
+    if (!("Notification" in window)) {
+      alert("Questo browser non supporta le notifiche desktop");
+    }
+   
+    // Controlla che siano già stati dati i permessi per inviare la notifica
+    else if (Notification.permission === "granted") {
+      var notification = new Notification(title, options);
+    }
+   
+    // Altrimenti chiede all'utente di accettare o meno le notifiche
+    else if (Notification.permission !== 'denied') {
+      Notification.requestPermission(function (permission) {
+        if (permission === "granted") {
+          var notification = new Notification(title, options);
+        }
+      });
+    }
+   
+  }
   
 
 
