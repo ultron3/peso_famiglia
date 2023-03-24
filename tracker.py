@@ -15,7 +15,7 @@ nome=input("inserisci nome: ")
 cognome=input("inserisci cognome: ")
 usr=input("inserisci username: ")
 password=input("inserisci la password: ")
-email=input("inserisci l'email")
+email=input("inserisci l'email: ")
 abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
 allenamento=input("inserisci il tipo di allenamento che vuoi fare: ")
@@ -27,7 +27,7 @@ mydict={
     "nome": nome, 
     "cognome":cognome,
     "username" :usr,
-    "pasasword":password,
+    "password":password,
     "email":email,
     "indirizzo":abitazione,
     "palestra": palestra,
