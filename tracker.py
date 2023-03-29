@@ -20,6 +20,7 @@ abitazione=input(" dove abiti: ")
 palestra=input("inserisci il nome della palestra in cui sei iscritto: ")
 allenamento=input("inserisci il tipo di allenamento che vuoi fare: ")
 corporatura=input("inserisci il tuo somatotipo (Endomorfo, mesomorfo ed ectomorfo): ")
+iban=input("inserisci l'iban : ")
 
 
 
@@ -32,7 +33,8 @@ mydict={
     "indirizzo":abitazione,
     "palestra": palestra,
     "allenamento":allenamento,
-    "somatotipo":corporatura
+    "somatotipo":corporatura,
+    "iban":iban
 
 }
 
@@ -64,6 +66,7 @@ print(otp1)
 
 
 print("Ciao mi chiamo Movit Ai il tuo personal virtuale,monitora giorno per giorno i passi fatti; ricordati di impostare un obiettivo giornaliero ")
+
 
 
 
